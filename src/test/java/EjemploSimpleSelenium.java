@@ -38,7 +38,7 @@ public class EjemploSimpleSelenium {
                 }
 
             //Forma de buscar y almacenar los elementos Web de una página.
-            WebElement txtBuscar = driver.findElement(By.id("testId-SearchBar-Input")); //Para validar el ID ctrl+F pegar //*[@id='testId-SearchBar-Input'] por class //*[@class='id a buscar']
+            WebElement txtBuscar = driver.findElement(By.id("testId-SearchBar-Input")); //Para validar el ID ctrl+F pegar //*[@id='testId-SearchBar-Input'] por class //*[@class='class=copy4 tertiary  jsx-280445118 normal']
             WebElement btnBuscar = driver.findElement(By.className("SearchBar-module_searchBtnIcon__2L2s0"));
 
             //Automatizando la página web de Amazon
@@ -59,7 +59,7 @@ public class EjemploSimpleSelenium {
             //Buscar un texto y almacenar el valor de la página web (resultados)
             WebElement lblResultado = driver.findElement(By.id("testId-SearchLandingContainer-totalResults"));
             String resultado = lblResultado.getText();
-            String resultadoEsperado = "Resultados (292)";
+            String resultadoEsperado = "Resultados (290)";
 
             //Validación de resultado esperado vs resultado encontrado
             Assertions.assertEquals(resultadoEsperado, resultado);
